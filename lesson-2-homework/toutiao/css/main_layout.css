@@ -1,0 +1,27 @@
+/*main layout*/
+.main{
+    display: flex;
+    justify-content: center;
+    min-width: 110px;
+}
+.main > .main_wrapper{
+    display: grid;
+    grid-template-columns: 110px 660px 340px;
+    /* text-align: center; */
+    margin-top: 10px;
+} 
+.main_wrapper > .left{
+    height: 660px;
+    margin-right: 30px;
+    display: inline-block;
+    /* background-color: aqua; */
+}
+
+.main_wrapper > .center{
+    margin-right: 30px;
+    /* background-color: chartreuse; */
+}
+
+.main_wrapper >.right{
+    /* background-color: greenyellow; */
+}

@@ -1,0 +1,17 @@
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+header > div{
+    flex:1;
+}
+a[class$="link"]{
+    color: white;
+}
+div[class$="header"]>*{
+    padding: 0px 10px;
+}
+.right_header>*{
+    float:right;
+}
