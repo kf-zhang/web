@@ -220,16 +220,17 @@ function getDocumentTop() {
         clearTimeout(timer);
         timer = setTimeout(function () {
             update_content();
-        }, 200);
+        }, 20);
     }
   }
 
   function updateTime(){
       timesSpans=document.getElementsByClassName("footer-bar-action time");
       for(const i of timesSpans)
-        i.innerHTML=getTime(i.time);
+        i.innerHTML=getTime(Number( i.time));
   }
 
+  update_content();
   setInterval(updateTime,1000);
 
 
