@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+
+}
+.content{
+    width: 310px;
+}
+.pic{
+    width: 120px;
+    height: 100px; 
+}
+.info{
+    color:#777777;
+}

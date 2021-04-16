@@ -1,0 +1,17 @@
+.labelContainer{
+    position: fixed;
+    top: 65px;
+    overflow-x: scroll;
+    overflow: hidden;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    background-color: white;
+}
+.label{
+    display: inline-block;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 3px;
+}
