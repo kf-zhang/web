@@ -1,0 +1,21 @@
+.music_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 8 1 auto;
+}
+.music_list_entry{
+    display: flex; /*Paragraphs are now displayed on one line*/
+    padding: 0 20px; /*Some breahing space*/
+    min-height: 50px;
+    background-color:whitesmoke;
+}
+.music_list_entry_name{
+    flex: 0 0 33%;
+}
+.music_list_entry_singer{
+    flex: 0 0 33%;
+}
+.music_list_entry_time{
+    flex: 0 0 33%;
+}   

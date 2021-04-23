@@ -1,0 +1,26 @@
+.player{
+    display: flex;
+    background-color: aliceblue;
+    flex: 0 0 auto;
+}
+.music_img{
+    height: 125px;
+    width: 125px;
+    flex:0 0 auto;
+}
+.music_info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.player_icon{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-grow: 5;
+}
+.player_icon img{
+    height: 50px;
+    width: 50px;
+}
