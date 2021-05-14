@@ -4,7 +4,7 @@
     /* background-color:  rgba(0,0,0,.02); */
     background-color: white;
     /* margin-left: 15px; */
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 
     flex: 1 0 234px ;
 }
@@ -31,5 +31,8 @@
 }
 .container{
     width:1250px;
+}
+.card_container-active{
+    background-color: #FF6700;
 }
 

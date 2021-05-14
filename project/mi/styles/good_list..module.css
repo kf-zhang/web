@@ -5,6 +5,9 @@
     justify-content: space-around;
     margin: 0 auto;
     background-color: #fff;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 .container{
     width: 1250px;

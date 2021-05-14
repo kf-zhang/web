@@ -4,7 +4,7 @@ export default function Card(props){
     return (
         <div className={styles.card}>
             <Link href="/goods">
-                <a>
+                <a className={styles.card_container}>
                     <img className={styles.image} src={props.src}></img>
                     <p className={styles.card_name}> {props.name}</p>
                     <p className={styles.card_price}>{props.price}</p>
