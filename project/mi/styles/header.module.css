@@ -1,0 +1,59 @@
+.site_header{
+    width: 1250px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.header_logo{
+    margin-right: 150px;
+}
+.xiaomi_logo{
+    height: 56px;
+    width: 56px;
+    border-radius: 20px;
+}
+
+.header_items{
+    display: flex;
+    justify-content:space-between;
+    flex: 1 1 auto;
+    
+}
+.a_item{
+
+}
+.a_item_hover{
+    color: #ff6700;
+}
+.header_search{
+    display: flex;
+    margin-left: 50px;
+}
+.search_input{
+    height: 50px;
+    border: 1px solid #e0e0e0;
+}
+.search_submit{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 0;
+}
+
+.hidden_content{
+    position: absolute;
+    background-color: white;
+    top: 115px;
+    left: auto;
+    z-index: 300;
+}
+.content{
+    height: 80px;
+}

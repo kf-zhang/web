@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stick {
+    width: 100px;
+    height: 4px;
+    background: #f50;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      height: 4px;
+    }
+    50% {
+      height: 100px;
+    }
+    100% {
+      height: 4px;
+    }
+  }
+    </style>
+    
+</head>
+<body>
+    <div><button type="button">start calc</button></div>
+
+    <div><input type="number" /></div>
+    <div class="log"></div>
+
+    <div class="stick"></div> 
+
+    <script>
+        // HTML CSS JSResult Skip Results Iframe
+        const btn = document.querySelector('button');
+        const input = document.querySelector('input');
+
+        const log = document.querySelector('.log');
+        function print(str) {
+        log.innerText = str;
+        }
+
+        let now;
+        let worker = new Worker("./worker.js");
+        const calculate = (num) => {
+            worker.postMessage(num);
+        };
+        worker.onmessage = event => {
+            const num = event.data;
+            console.log(num);
+            const costInMs = Date.now() - now;
+            print(`Result: ${num} in ${costInMs}ms`);
+        };
+
+
+        btn.addEventListener('click', () => {
+            const n = Number(input.value);
+            calculate(n);
+            print('Waiting...');
+            console.log("waiting")
+            now = Date.now();
+        });
+        
+      
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,125 @@
+.goods_page{
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left{
+    
+    width: 625px;
+    background-color:white;
+}
+.left_image{
+    
+    width: 560px;
+    height: 560px;
+}
+.right{
+    width: 625px;
+}
+.goods_name{
+
+}
+.goods_des{
+    
+}
+.goods_price{
+    color: #ff5700;
+}
+.right_up{
+    border-bottom: 1px solid black;
+}
+.right_bottom{
+
+}
+.choose_version{
+
+}
+.choose_color{
+
+}
+.version_list{
+    /* display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap; */
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 60px);
+   padding: 0;
+   margin: 0;
+}
+.version_item{
+    /* margin: 0 auto; */
+    color: #757575;
+    margin-left: 20px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    /* padding-left: 100px; */
+    padding-top: 15px;
+    flex: 1 0 300px;
+    display: block;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+.version_item:hover{
+    border-color: #ff5700;
+    color: #ff5700;
+}
+.color_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 60px);
+    padding: 0;
+    margin: 0;
+}
+.color_item{
+    color: #757575;
+    margin-left: 20px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    /* padding-left: 100px; */
+    padding-top: 15px;
+    flex: 1 0 300px;
+    display: block;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+.color_item:hover{
+    border-color: #ff5700;
+    color: #ff5700;
+}
+.total_price{
+    background-color: #ecebeb;
+    font-size: large;
+}
+.total_price_des{
+    padding-left: 20px;
+    padding-top: 10px;
+    /* padding: ; */
+    color: #616161;
+}
+.total_price_content{
+    /* padding-left: 50px; */
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #ff5700;
+}
+.pay{
+    width: 300px;
+    height: 50px;
+    background-color: #ff5700;
+    font-size: 18px;
+
+    text-align: center;
+    padding-top: 15px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,32 @@
+.container{
+    border-top:  1px solid #e0e0e0;;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 250px;
+    padding-right: 150px;
+
+}
+.card{
+    flex: 1 1 200px;
+    width: 200px;
+    height: 300px;
+    padding: 35px 12px 0px;
+    background-color: white;
+}
+.card_img{
+    width: 110px;
+    height: 160px;
+    margin: 0 auto;
+}
+.card_name{
+    width: 110px;
+    text-align: center;
+    background-color: white;
+}
+.card_price{
+    width: 110px;
+    text-align: center;
+    color: #ff6700;
+    background-color: white;
+}   
